@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Shutterfly" parallel="tests" thread-count="4">
+
+	<test name="Sign up for home delivery - iPhone">
+		<parameter name="targetEnvironment" value="iPhone" />
+		<classes>
+			<class name="SF" />
+		</classes>
+	</test>
+	<test name="Sign up for home delivery - Galaxy S6">
+		<parameter name="targetEnvironment" value="Galaxy S6" />
+		<classes>
+			<class name="SF" />
+		</classes>
+	</test>
+</suite>

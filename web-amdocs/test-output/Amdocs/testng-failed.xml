@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Amdocs]" parallel="tests">
+  <parameter name="targetEnvironment" value="Galaxy S6"/>
+  <test name="Sign up for home delivery - iPhone(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="iPhone"/>
+    <classes>
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="KindredGroup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- Sign up for home delivery - iPhone(failed) -->
+  <test name="Sign up for home delivery - Firefox 43(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Firefox 43"/>
+    <classes>
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="KindredGroup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- Sign up for home delivery - Firefox 43(failed) -->
+  <test name="Sign up for home delivery - Galaxy S6(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Galaxy S6"/>
+    <classes>
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="KindredGroup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- Sign up for home delivery - Galaxy S6(failed) -->
+  <test name="Sign up for home delivery - IE 11(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Internet Explorer 11"/>
+    <classes>
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="KindredGroup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- Sign up for home delivery - IE 11(failed) -->
+</suite> <!-- Failed suite [Amdocs] -->

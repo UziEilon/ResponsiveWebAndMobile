@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>TestNG:  Sign up for home delivery - Firefox 43</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sign up for home delivery - Firefox 43</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 05 23:49:30 IDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>62 seconds (62256 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RemoteWebDriverTest.KindredGroup()'><b>KindredGroup</b><br>Test class: RemoteWebDriverTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;nb-dmitriyy-10&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{reportPdfUrl=https://partners.reporting-01.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, resolution=1366x768, deviceName=1_03834920-A621-4BE4-B18D-D621A56A17CB, platform=ANY, password=, platformVersion=8.1, browserVersion=43, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.perfectomobile.com/nexperience/singletest/report/?reportRepositoryKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml&amp;ownerId=dmitriyy@perfectomobile.com&amp;sharingCode=349fb0ba-2660-4bda-a6ea-b2dac5feec81, browserName=Firefox, takesScreenshot=true, javascriptEnabled=true, platformName=Windows, deviceType=WEB, rotatable=true, testGridReportUrl=https://partners.reporting-01.perfectomobile.com?externalId[0]=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, entityType=remote_web_driver, offlineToken=, serverConnector=, executionId=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, webdriver.remote.sessionid=cdece80d-a59f-4ec0-8018-997ef1289f94, locationContextEnabled=true, scriptName=RemoteWebDriver, location=US East, reportKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml, windTunnelReportUrl=https://partners.perfectomobile.com/nexperience/singletest/report/?reportRepositoryKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml&amp;ownerId=dmitriyy@perfectomobile.com&amp;sharingCode=349fb0ba-2660-4bda-a6ea-b2dac5feec81, user=, cssSelectorsEnabled=true}]
+Session ID: cdece80d-a59f-4ec0-8018-997ef1289f94
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
+	at RemoteWebDriverTest.openHomepage(RemoteWebDriverTest.java:99)
+	at RemoteWebDriverTest.KindredGroup(RemoteWebDriverTest.java:91)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1255396648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255396648'><pre>org.openqa.selenium.WebDriverException: Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;nb-dmitriyy-10&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{reportPdfUrl=https://partners.reporting-01.perfectomobile.com/export/api/v1/test-executions/pdf?externalId[0]=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, resolution=1366x768, deviceName=1_03834920-A621-4BE4-B18D-D621A56A17CB, platform=ANY, password=, platformVersion=8.1, browserVersion=43, host=partners.perfectomobile.com, singleTestReportUrl=https://partners.perfectomobile.com/nexperience/singletest/report/?reportRepositoryKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml&amp;ownerId=dmitriyy@perfectomobile.com&amp;sharingCode=349fb0ba-2660-4bda-a6ea-b2dac5feec81, browserName=Firefox, takesScreenshot=true, javascriptEnabled=true, platformName=Windows, deviceType=WEB, rotatable=true, testGridReportUrl=https://partners.reporting-01.perfectomobile.com?externalId[0]=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, entityType=remote_web_driver, offlineToken=, serverConnector=, executionId=dmitriyy@perfectomobile.com_RemoteWebDriver_17-04-05_20_51_17_44251, webdriver.remote.sessionid=cdece80d-a59f-4ec0-8018-997ef1289f94, locationContextEnabled=true, scriptName=RemoteWebDriver, location=US East, reportKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml, windTunnelReportUrl=https://partners.perfectomobile.com/nexperience/singletest/report/?reportRepositoryKey=PRIVATE:RemoteWebDriver/170405/RemoteWebDriver_17-04-05_20_51_17_44251.xml&amp;ownerId=dmitriyy@perfectomobile.com&amp;sharingCode=349fb0ba-2660-4bda-a6ea-b2dac5feec81, user=, cssSelectorsEnabled=true}]
+Session ID: cdece80d-a59f-4ec0-8018-997ef1289f94
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
+	at RemoteWebDriverTest.openHomepage(RemoteWebDriverTest.java:99)
+	at RemoteWebDriverTest.KindredGroup(RemoteWebDriverTest.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+</pre></div></td>
+<td>1</td>
+<td>RemoteWebDriverTest@5442a311</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [KindredGroup]" parallel="tests">
+  <parameter name="targetEnvironment" value="Galaxy S6"/>
+  <test name="KindredGroup - iPhone(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="iPhone"/>
+    <classes>
+      <class name="RemoteWebDriverTest$Driver">
+        <methods>
+          <include name="DBWebApp"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest$Driver -->
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- KindredGroup - iPhone(failed) -->
+  <test name="KindredGroup - Galaxy S6(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Galaxy S6"/>
+    <classes>
+      <class name="RemoteWebDriverTest$Driver">
+        <methods>
+          <include name="DBWebApp"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest$Driver -->
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- KindredGroup - Galaxy S6(failed) -->
+  <test name="KindredGroup - Chrome 56(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Chrome 56"/>
+    <classes>
+      <class name="RemoteWebDriverTest$Driver">
+        <methods>
+          <include name="DBWebApp"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest$Driver -->
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- KindredGroup - Chrome 56(failed) -->
+</suite> <!-- Failed suite [KindredGroup] -->

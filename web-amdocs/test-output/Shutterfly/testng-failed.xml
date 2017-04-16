@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Shutterfly]" parallel="tests">
+  <parameter name="targetEnvironment" value="Galaxy S6"/>
+  <test name="Sign up for home delivery - iPhone(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="iPhone"/>
+    <classes>
+      <class name="SF">
+        <methods>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="ShutterFly_Order"/>
+        </methods>
+      </class> <!-- SF -->
+    </classes>
+  </test> <!-- Sign up for home delivery - iPhone(failed) -->
+  <test name="Sign up for home delivery - Galaxy S6(failed)" parallel="tests">
+    <parameter name="targetEnvironment" value="Galaxy S6"/>
+    <classes>
+      <class name="SF">
+        <methods>
+          <include name="end"/>
+          <include name="end"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="ShutterFly_Order"/>
+        </methods>
+      </class> <!-- SF -->
+    </classes>
+  </test> <!-- Sign up for home delivery - Galaxy S6(failed) -->
+</suite> <!-- Failed suite [Shutterfly] -->

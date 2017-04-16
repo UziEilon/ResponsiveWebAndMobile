@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DB" parallel="tests" thread-count="4">
+
+	<test name="DB - iPhone">
+		<parameter name="targetEnvironment" value="iPhone" />
+		<classes>
+			<class name="RemoteWebDriverTest" />
+		</classes>
+	</test>
+	<test name="DB - Chrome 56">
+		<parameter name="targetEnvironment" value="Chrome 56" />
+		<classes>
+			<class name="RemoteWebDriverTest" />
+		</classes>
+	</test>
+	<test name="DB - Firefox 52">
+		<parameter name="targetEnvironment" value="Firefox 52" />
+		<classes>
+			<class name="RemoteWebDriverTest" />
+		</classes>
+	</test>
+	<test name="DB - Galaxy S6">
+		<parameter name="targetEnvironment" value="Galaxy S6" />
+		<classes>
+			<class name="RemoteWebDriverTest" />
+		</classes>
+	</test>
+</suite>

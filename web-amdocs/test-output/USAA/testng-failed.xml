@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [USAA]" parallel="tests">
+  <parameter name="platformVersion" value="8.1"/>
+  <parameter name="browserVersion" value="50"/>
+  <parameter name="browserName" value="Chrome"/>
+  <test name="test1(failed)" parallel="tests">
+    <parameter name="platformVersion" value="8.1"/>
+    <parameter name="browserVersion" value="50"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="RemoteWebDriverTest">
+        <methods>
+          <include name="setup"/>
+          <include name="BostonGlobeTest"/>
+        </methods>
+      </class> <!-- RemoteWebDriverTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [USAA] -->

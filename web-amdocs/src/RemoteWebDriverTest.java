@@ -118,17 +118,26 @@ public class RemoteWebDriverTest {
 	            e.printStackTrace();
 		 }
 		Thread.sleep(3000);
+		try {
 		switchToContext(driver, "WEBVIEW");
-    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	driver.findElementByXPath("//*[@id='acceptButton']").click();
-    	screenshot();
+		 } catch (Exception e) {
+	            e.printStackTrace();
+		 }
 		
 		Thread.sleep(3000);
-    	//switchToContext(driver, "WEBVIEW");
-    	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-    	//driver.findElementByXPath("//*[@class='logo']//img").click();
-    	//screenshot();
+    	switchToContext(driver, "WEBVIEW");
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    	driver.findElementByXPath("//*[@class='logo']//img").click();
+    	screenshot();
     	
+    	
+    	Thread.sleep(3000);
+    	switchToContext(driver, "WEBVIEW");
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    	driver.findElementByXPath("//*[@id='pi_15645']/section[1]/a").click();
+    	Thread.sleep(10000);
     	
     	
     	
@@ -139,7 +148,11 @@ public class RemoteWebDriverTest {
     } finally {
         try {
             // Retrieve the URL of the Single Test Report, can be saved to your execution summary and used to download the report at a later point
-           
+        	 String reportURL = (String)(driver.getCapabilities().getCapability(WindTunnelUtils.SINGLE_TEST_REPORT_URL_CAPABILITY));
+
+        	 System.out.println("Report URL: " + _client.getReportUrl());
+     		_client.testStop(TestResultFactory.createSuccess());
+        	 
             driver.close();
 
             // In case you want to download the report or the report attachments, do it here.

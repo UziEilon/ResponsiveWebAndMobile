@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="DB" duration-ms="341813" started-at="2017-04-16T17:40:09Z" finished-at="2017-04-16T17:45:51Z">
+  <suite name="DB" duration-ms="392486" started-at="2017-04-17T10:25:08Z" finished-at="2017-04-17T10:31:40Z">
     <groups>
     </groups>
-    <test name="DB - iPhone" duration-ms="35677" started-at="2017-04-16T17:40:09Z" finished-at="2017-04-16T17:40:45Z">
+    <test name="DB - iPhone" duration-ms="54620" started-at="2017-04-17T10:25:08Z" finished-at="2017-04-17T10:26:02Z">
       <class name="RemoteWebDriverTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@523884b2]" name="setup" is-config="true" duration-ms="35666" started-at="2017-04-16T20:40:09Z" finished-at="2017-04-16T20:40:45Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@523884b2]" name="setup" is-config="true" duration-ms="54611" started-at="2017-04-17T13:25:08Z" finished-at="2017-04-17T13:26:02Z">
           <params>
             <param index="0">
               <value>
@@ -20,24 +20,9 @@
         </test-method> <!-- setup -->
       </class> <!-- RemoteWebDriverTest -->
     </test> <!-- DB - iPhone -->
-    <test name="DB - Galaxy S6" duration-ms="57885" started-at="2017-04-16T17:40:09Z" finished-at="2017-04-16T17:41:07Z">
+    <test name="DB - Firefox 52" duration-ms="69642" started-at="2017-04-17T10:25:08Z" finished-at="2017-04-17T10:26:17Z">
       <class name="RemoteWebDriverTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@548e7350]" name="setup" is-config="true" duration-ms="57879" started-at="2017-04-16T20:40:09Z" finished-at="2017-04-16T20:41:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Galaxy S6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- RemoteWebDriverTest -->
-    </test> <!-- DB - Galaxy S6 -->
-    <test name="DB - Firefox 52" duration-ms="126170" started-at="2017-04-16T17:40:09Z" finished-at="2017-04-16T17:42:15Z">
-      <class name="RemoteWebDriverTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@39c0f4a]" name="setup" is-config="true" duration-ms="126162" started-at="2017-04-16T20:40:09Z" finished-at="2017-04-16T20:42:15Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@39c0f4a]" name="setup" is-config="true" duration-ms="69635" started-at="2017-04-17T13:25:08Z" finished-at="2017-04-17T13:26:17Z">
           <params>
             <param index="0">
               <value>
@@ -50,9 +35,24 @@
         </test-method> <!-- setup -->
       </class> <!-- RemoteWebDriverTest -->
     </test> <!-- DB - Firefox 52 -->
-    <test name="DB - Chrome 56" duration-ms="341813" started-at="2017-04-16T17:40:09Z" finished-at="2017-04-16T17:45:51Z">
+    <test name="DB - Galaxy S6" duration-ms="155507" started-at="2017-04-17T10:25:08Z" finished-at="2017-04-17T10:27:43Z">
       <class name="RemoteWebDriverTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@6a41eaa2]" name="setup" is-config="true" duration-ms="341807" started-at="2017-04-16T20:40:09Z" finished-at="2017-04-16T20:45:51Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@548e7350]" name="setup" is-config="true" duration-ms="155502" started-at="2017-04-17T13:25:08Z" finished-at="2017-04-17T13:27:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Galaxy S6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- RemoteWebDriverTest -->
+    </test> <!-- DB - Galaxy S6 -->
+    <test name="DB - Chrome 56" duration-ms="392486" started-at="2017-04-17T10:25:08Z" finished-at="2017-04-17T10:31:40Z">
+      <class name="RemoteWebDriverTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:RemoteWebDriverTest@6a41eaa2]" name="setup" is-config="true" duration-ms="392478" started-at="2017-04-17T13:25:08Z" finished-at="2017-04-17T13:31:40Z">
           <params>
             <param index="0">
               <value>
